@@ -9,6 +9,8 @@ ls -lah
 #export PATH=$PATH:/home/<user>/scripts
 #add scripts folder under home folder to path env variable
 
+#Conditionals and Loops
+
 DIRECTORY="~/user/test" #variable is all caps by convention
 if [ -d $DIRECTORY ] ; then
         echo "Directory exists"
@@ -16,4 +18,4 @@ else
         echo "Directory not found"
 fi  #end if conditional with if backwards
 
-#Conditionals and Loops
+
