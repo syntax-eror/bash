@@ -17,5 +17,3 @@ if [ -d $DIRECTORY ] ; then
 else
         echo "Directory not found"
 fi  #end if conditional with if backwards
-
-
