@@ -4,10 +4,15 @@ ip addr #new hotness
 
 ip addr show
 
+#add ip to interface
+ip addr add <ip> dev <interface>
+
 ip link show
 ip link show <interfacename>
 ip link set dev <interfacename> down
 ip link set dev <interfacename> up
+
+#show routing table
 ip route
 
 ss - replacement for netstat
