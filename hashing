@@ -1,0 +1,4 @@
+md5sum file
+sha256sum file
+echo -n "text" | md5sum
+#-n - don't output trailing newline
