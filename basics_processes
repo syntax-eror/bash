@@ -1,0 +1,23 @@
+#list running processes, only current session
+ps
+ps -efww
+
+-f #more detail
+-w #wide output
+-ww #wide ouput without truncation
+-e #all processes
+
+ctrl + c - sigint
+ctrl + \ - sigquit
+
+kill <pid>
+-9 - to kill processes that will not term
+kill 666 -9 #hail satan
+
+#job handling
+jobs
+bg #resume stopped process
+fg #return to foreground
+
+& #start in background
+nc -l 44 &
