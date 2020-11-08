@@ -1,0 +1,14 @@
+ipconfig #old and busted
+
+ip addr #new hotness
+
+ip addr show
+
+ip link show
+ip link show <interfacename>
+ip link set dev <interfacename> down
+ip link set dev <interfacename> up
+ip route
+
+ss - replacement for netstat
+ss -anp
