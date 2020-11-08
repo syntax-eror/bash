@@ -1,0 +1,4 @@
+awk '{print $1}' filename
+#print string1 from filename
+ex. awk'{print $1}' accounts.txt
+this will print all instances of the first string appearing in file
