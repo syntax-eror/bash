@@ -1,0 +1,26 @@
+Ctrl + A #beginning of line
+Ctrl + E #end of line
+Ctrl + S #stop display of characters, send to buffer
+Ctrl + Q #resume, dump buffer
+Ctrl + U #clear to beginning
+Ctrl + W #delete word
+
+#man and help commands
+info <command> #show Info docs if they exist
+command --help #show abbreviated help
+whatis <command> #display one-line manual description
+apropos <command> #same as man -k - searches the 
+
+whereis #locate binary, source, and man pages for cmd
+which #locate a command
+
+wc #wordcount
+wc <filename>
+
+head #first x lines
+head -n2 #first two lines
+
+tail #last x lines
+tail -n2
+
+echo "text" > file #dump "text" into file
