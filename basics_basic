@@ -26,3 +26,10 @@ tail -n2
 echo "text" > file #dump "text" into file
 
 &&  #run two commands; i.e., ls -la && cat ~
+
+sudo -l #list privileges available under current account
+
+users #print users currently logged in
+groups #print groups current user is member of
+
+cat /etc/passwd #show list of users
