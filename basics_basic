@@ -24,3 +24,5 @@ tail #last x lines
 tail -n2
 
 echo "text" > file #dump "text" into file
+
+&&  #run two commands; i.e., ls -la && cat ~
