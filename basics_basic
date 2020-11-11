@@ -1,3 +1,4 @@
+#shell key shortcuts#
 Ctrl + A #beginning of line
 Ctrl + E #end of line
 Ctrl + S #stop display of characters, send to buffer
@@ -5,7 +6,7 @@ Ctrl + Q #resume, dump buffer
 Ctrl + U #clear to beginning
 Ctrl + W #delete word
 
-#man and help commands
+#man and help commands#
 info <command> #show Info docs if they exist
 command --help #show abbreviated help
 whatis <command> #display one-line manual description
@@ -45,4 +46,7 @@ find / -name hashcat.potfile
 locate - use a database
 locate hashcat.potfile
 updatedb #manually update locate's db
-#
+
+#ownership and permissions#
+chown user:group filename
+chmod 777 filename
