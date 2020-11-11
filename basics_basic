@@ -37,3 +37,10 @@ cat /etc/passwd #show list of users
 passwd #change a password, run --help for basic options; default is current account
 
 shred #overwrite file sectors
+
+###searching
+find - find / -name nameoffile #search starting at / for a filename
+find / -name hashcat.potfile
+
+locate - use a database
+locate hashcat.potfile
