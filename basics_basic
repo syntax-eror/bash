@@ -44,3 +44,5 @@ find / -name hashcat.potfile
 
 locate - use a database
 locate hashcat.potfile
+updatedb #manually update locate's db
+#
