@@ -33,3 +33,5 @@ users #print users currently logged in
 groups #print groups current user is member of
 
 cat /etc/passwd #show list of users
+
+passwd #change a password, run --help for basic options; default is current account
