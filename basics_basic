@@ -52,3 +52,6 @@ chown user:group filename
 chmod 777 filename
 
 cut -d: -f3 #delimiter : field 3
+
+| sort | uniq
+uniq -c #count of unique results
