@@ -50,3 +50,5 @@ updatedb #manually update locate's db
 #ownership and permissions#
 chown user:group filename
 chmod 777 filename
+
+cut -d: -f3 #delimiter : field 3
