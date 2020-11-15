@@ -6,6 +6,9 @@ Ctrl + Q #resume, dump buffer
 Ctrl + U #clear to beginning
 Ctrl + W #delete word
 
+cat | jq #pipe to json processor utility to display file with formatting
+
+
 #man and help commands#
 info <command> #show Info docs if they exist
 command --help #show abbreviated help
