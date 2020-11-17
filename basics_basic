@@ -8,6 +8,8 @@ Ctrl + W #delete word
 
 cat | jq #pipe to json processor utility to display file with formatting
 
+mkdir -p  #-p: ignore error
+
 
 #man and help commands#
 info <command> #show Info docs if they exist
