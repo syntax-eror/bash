@@ -60,3 +60,5 @@ cut -d: -f3 #delimiter : field 3
 
 | sort | uniq
 uniq -c #count of unique results
+
+file #show info about file type, ie file filename.fil
