@@ -1,4 +1,4 @@
-#shell key shortcuts#
+==# KEY SHORTCUTS #==
 Ctrl + A #beginning of line
 Ctrl + E #end of line
 Ctrl + S #stop display of characters, send to buffer
@@ -6,59 +6,46 @@ Ctrl + Q #resume, dump buffer
 Ctrl + U #clear to beginning
 Ctrl + W #delete word
 
-cat | jq #pipe to json processor utility to display file with formatting
-
-mkdir -p  #-p: ignore error
-
-
-#man and help commands#
-info <command> #show Info docs if they exist
-command --help #show abbreviated help
-whatis <command> #display one-line manual description
-apropos <command> #same as man -k - searches the 
-
-whereis #locate binary, source, and man pages for cmd
-which #locate a command
-
-wc #wordcount
-wc <filename>
-
-head #first x lines
-head -n2 #first two lines
-
-tail #last x lines
-tail -n2
-
-echo "text" > file #dump "text" into file
-
-&&  #run two commands; i.e., ls -la && cat ~
-
-sudo -l #list privileges available under current account
-
-users #print users currently logged in
-groups #print groups current user is member of
-
-cat /etc/passwd #show list of users
-
-passwd #change a password, run --help for basic options; default is current account
-
-shred #overwrite file sectors
-
-###searching
-find - find / -name nameoffile #search starting at / for a filename
-find / -name hashcat.potfile
-
-locate - use a database
-locate hashcat.potfile
-updatedb #manually update locate's db
-
-#ownership and permissions#
-chown user:group filename
-chmod 777 filename
-
+==# FILE MANIPULATION #==
 cut -d: -f3 #delimiter : field 3
-
+file #show info about file type, ie file filename.fil
+mkdir -p  #-p: ignore error
+shred #overwrite file sectors
 | sort | uniq
 uniq -c #count of unique results
 
-file #show info about file type, ie file filename.fil
+head #first x lines ; head -n2 first two lines
+tail #last x lines ; tail -n2
+
+==# FILE SEARCHING #==
+find - find / -name nameoffile #search starting at / for a filename
+find / -name hashcat.potfile
+
+locate #uses a database
+locate <filename>
+updatedb #manually update locate's db
+
+==# MAN/HELP #==
+<command> --help #show abbreviated help
+apropos <command> #same as man -k - searches the 
+info <command> #show Info docs if they exist
+whatis <command> #display one-line manual description
+
+==# SHELL UTILS #==
+&&  #run two commands; i.e., ls -la && cat ~
+cat | jq #pipe to json processor utility to display file with formatting
+echo "text" > file #dump "text" into file
+wc #wordcount
+wc <filename>
+whereis #locate binary, source, and man pages for cmd
+which #locate a command
+
+==# USER MGMT/PERMISSIONS #==
+cat /etc/passwd #show list of users
+cat /etc/shadow #show hashed passwords
+chown user:group filename
+chmod 777 filename
+groups #print groups current user is member of
+passwd #change a password, run --help for basic options; default is current account
+sudo -l #list privileges available under current account
+users #print users currently logged in
