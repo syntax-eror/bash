@@ -2,3 +2,9 @@ awk '{print $1}' filename
 #print string1 from filename
 ex. awk'{print $1}' accounts.txt
 this will print all instances of the first string appearing in file
+
+use with sed to filter further:
+sed 's/@.*//'  #remove everything after the @ in an email address
+James Allen jallen@place.com
+$1    $2    $3
+awk'{print $3"}' | sed 's/@.*//'   =   jallen
