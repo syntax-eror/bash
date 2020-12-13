@@ -31,6 +31,9 @@ apropos <command> #same as man -k - searches the
 info <command> #show Info docs if they exist
 whatis <command> #display one-line manual description
 
+==# MISC #==
+PS1="<enter anything>" #change your shell prompt, ie, linux$ can be changed to system1$
+
 ==# SHELL UTILS #==
 &&  #run two commands; i.e., ls -la && cat ~
 cat | jq #pipe to json processor utility to display file with formatting
