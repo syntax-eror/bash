@@ -34,6 +34,10 @@ whatis <command> #display one-line manual description
 ==# MISC #==
 PS1="<enter anything>" #change your shell prompt, ie, linux$ can be changed to system1$
 
+==# PATH #==
+echo $PATH #view $PATH env variables
+export PATH=/<path>:$PATH #add location to path
+
 ==# SHELL UTILS #==
 &&  #run two commands; i.e., ls -la && cat ~
 cat | jq #pipe to json processor utility to display file with formatting
