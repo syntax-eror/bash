@@ -42,6 +42,7 @@ export PATH=/<path>:$PATH #add location to path
 &&  #run two commands; i.e., ls -la && cat ~
 cat | jq #pipe to json processor utility to display file with formatting
 echo "text" > file #dump "text" into file
+nohup #execute command immune to interrupts; will continue after logging out
 wc #wordcount
 wc <filename>
 whereis #locate binary, source, and man pages for cmd
