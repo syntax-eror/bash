@@ -43,6 +43,7 @@ export PATH=/<path>:$PATH #add location to path
 cat | jq #pipe to json processor utility to display file with formatting
 echo "text" > file #dump "text" into file
 nohup #execute command immune to interrupts; will continue after logging out
+uptime #display system uptime
 wc #wordcount
 wc <filename>
 whereis #locate binary, source, and man pages for cmd
