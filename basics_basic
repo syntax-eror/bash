@@ -55,6 +55,8 @@ cat /etc/passwd #show list of users
 cat /etc/shadow #show hashed passwords
 chown user:group filename
 chmod 777 filename
+chmod 4111 filename #set SUID bit; make file run as OWNER not USER
+#filename -p #force to honor SUID bit, some systems will not do so
 groups #print groups current user is member of
 passwd #change a password, run --help for basic options; default is current account
 sudo -l #list privileges available under current account
