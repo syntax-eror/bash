@@ -20,6 +20,7 @@ tail #last x lines ; tail -n2
 ==# FILE SEARCHING #==
 find - find / -name nameoffile #search starting at / for a filename
 find / -name hashcat.potfile
+find / -name *.* -print 2>/dev/null #send errors to dev/null
 
 locate #uses a database
 locate <filename>
