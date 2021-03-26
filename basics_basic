@@ -26,6 +26,9 @@ locate #uses a database
 locate <filename>
 updatedb #manually update locate's db
 
+grep #find a pattern
+grep "^program-" #find only strings starting with "program"
+
 ==# MAN/HELP #==
 <command> --help #show abbreviated help
 apropos <command> #same as man -k - searches the 
