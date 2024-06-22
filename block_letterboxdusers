@@ -1,0 +1,9 @@
+#script to block people on letterboxd so you don't have to click through 2 different screens
+
+#!/bin/bash
+
+read -p "Enter username: " var_username
+echo $var_username
+
+curl "https://letterboxd.com/$var_username/block/" --compressed -X POST -H 'User-Agent: Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:127.0) Gecko/20100101 Firefox/127.0' -H 'Accept: application/json, text/javascript, */*; q=0.01' -H 'Accept-Language: en-US,en;q=0.5' -H 'Accept-Encoding: gzip, deflate, br, zstd' -H 'Content-Type: application/x-www-form-urlencoded; charset=UTF-8' -H 'X-Requested-With: XMLHttpRequest' -H 'Origin: https://letterboxd.com' -H 'DNT: 1' -H 'Sec-GPC: 1' -H 'Connection: keep-alive'
+#need to fill in the rest for auth, network inspector will give the needed info
