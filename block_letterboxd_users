@@ -1,6 +1,6 @@
-#script to block people on letterboxd so you don't have to click through 2 different screens
-
 #!/bin/bash
+
+#script to block people on letterboxd by just typing in their username so you don't have to click through 2 different screens
 
 read -p "Enter username: " var_username
 echo $var_username
